@@ -1,0 +1,10 @@
+{
+    "full_name": "Your name",
+    "email": "Your address email (eq. you@example.com)",
+    "project_home": "Github Url, website, etc.",
+    "module_name": "Name of the project",
+    "description": "A short description of the project",
+    "release_date": "{% now 'local' %}",
+    "version": "0.1.0",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
