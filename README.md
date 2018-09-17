@@ -14,7 +14,7 @@ $ pip install cookiecutter
 ## Usage
 Use this template to create a python package:
 ```
-cookiecutter gh:madelyneriksen/cookiecutter-simple-pypackage
+$ cookiecutter gh:madelyneriksen/cookiecutter-simple-pypackage
 ```
 
 ## License
