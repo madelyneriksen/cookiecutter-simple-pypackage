@@ -26,6 +26,12 @@ def test_project_tree(cookies):
 
 
 def test_run_flake8(cookies):
-    result = cookies.bake(extra_context={'module_name': 'flake8compat'})
+    result = cookies.bake(extra_context={'module_name': 'codestylecompat'})
     with inside_dir(str(result.project)):
-        assert subprocess.check_call(['flake8']) == 0
+        assert subprocess.check_call(['pycodestyle', 'codestylecompat/']) == 0
+
+
+def test_run_pylint(cookies):
+    result = cookies.bake(extra_context={'module_name': 'pylintcompat'})
+    with inside_dir(str(result.project)):
+        assert subprocess.check_call(['pylint', 'pylintcompat']) == 0
