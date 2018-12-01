@@ -19,6 +19,6 @@ setup(
     author_email="{{ cookiecutter.email }}",
     description="{{ cookiecutter.description }}",
     url="{{ cookiecutter.project_home }}",
-    packages=[],
+    packages=["{{ cookiecutter.module_name }}"],
     long_description=read('README.md'),
 )
