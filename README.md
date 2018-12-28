@@ -1,5 +1,6 @@
 Simple Python Package
 =====================
+![](https://travis-ci.org/madelyneriksen/cookiecutter-simple-pypackage.svg?branch=master)
 
 A small, pip installable cookiecutter, with support for Pytest and Travis CI. Pylint and Pycodestyle plugins are included.
 
